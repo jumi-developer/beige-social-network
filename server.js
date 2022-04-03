@@ -57,7 +57,7 @@ http.listen(3000, function () {
     console.log("Servidor iniciado." + mainURL);
 
     // conectarse con mongodb
-    mongoClient.connect("mongodb+srv://milagros:12345@clusterssdd.mchd6.mongodb.net/my_social_network?authSource=admin&replicaSet=atlas-39yi3a-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true", function (error, client) {
+    mongoClient.connect("mongodb+srv://alex:proyectobd3@cluster0.apfbj.mongodb.net/my_social_network?authSource=admin&replicaSet=atlas-1w4yxc-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", function (error, client) {
         //mongodb+srv://alex:proyectodb3@cluster0.apfbj.mongodb.net/my_social_network?retryWrites=true&w=majority
         // el nombre de la base de datos será "my_social_network"
         var database = client.db("my_social_network");
